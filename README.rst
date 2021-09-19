@@ -1,6 +1,6 @@
-=====
-Mailauth
-=====
+===============
+Django Mailauth
+===============
 
 Mailauth is a Django authentication app to replace the default
 username-based authentication with an email-based authentication.
@@ -11,19 +11,19 @@ Quick start
 -----------
 0. Install the ``django-mailauth`` authentication using pip from PyPi::
    
-   pip install django-mailauth
+      pip install django-mailauth
 
 1. Add "mailauth" to your INSTALLED_APPS setting like this::
 
-    INSTALLED_APPS = [
+      INSTALLED_APPS = [
         ...
         'mailauth',
-    ]
+      ]
 
 2. Replace your default "User" model with with Mailauth's custom user model
    In your ``settings.py`` module, add or update the following line::
    
-   AUTH_USER_MODEL = 'mailauth.User'
+      AUTH_USER_MODEL = 'mailauth.User'
 
 3. Run ``python manage.py makemigrations`` to create your first migrations.
 4. Run ``python manage.py migrate`` to apply the changes to your database tables.
